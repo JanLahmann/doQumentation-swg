@@ -14,8 +14,8 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"doQumentation","applicationCategory":"EducationalApplication","operatingSystem":"Web, Docker, Raspberry Pi","description":"Open-source frontend for IBM Quantum documentation with live Jupyter code execution, simulator mode, and offline support.","url":"https://doqumentation.org","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"license":"https://www.apache.org/licenses/LICENSE-2.0"}</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script><link rel="stylesheet" href="/assets/css/styles.94650977.css">
-<script src="/assets/js/runtime~main.a51c2d86.js" defer="defer"></script>
-<script src="/assets/js/main.50d1594d.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.9bc9d55a.js" defer="defer"></script>
+<script src="/assets/js/main.758392ef.js" defer="defer"></script>
 <meta data-dq-fallback-noindex name="robots" content="noindex, follow" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -28,12 +28,21 @@
 <p><em>Last updated 5 June 2026</em></p>
 <!-- -->
 <p>Keep up with the latest and greatest from Qiskit and IBM Quantum®!</p>
-<p>For all product announcements, visit the <a class="" href="/notifications">notifications</a> page on IBM Quantum Platform.</p>
+<div class="theme-admonition theme-admonition-note admonition_xJq3 alert alert--secondary"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M6.3 5.69a.942.942 0 0 1-.28-.7c0-.28.09-.52.28-.7.19-.18.42-.28.7-.28.28 0 .52.09.7.28.18.19.28.42.28.7 0 .28-.09.52-.28.7a1 1 0 0 1-.7.3c-.28 0-.52-.11-.7-.3zM8 7.99c-.02-.25-.11-.48-.31-.69-.2-.19-.42-.3-.69-.31H6c-.27.02-.48.13-.69.31-.2.2-.3.44-.31.69h1v3c.02.27.11.5.31.69.2.2.42.31.69.31h1c.27 0 .48-.11.69-.31.2-.19.3-.42.31-.69H8V7.98v.01zM7 2.3c-3.14 0-5.7 2.54-5.7 5.68 0 3.14 2.56 5.7 5.7 5.7s5.7-2.55 5.7-5.7c0-3.15-2.56-5.69-5.7-5.69v.01zM7 .98c3.86 0 7 3.14 7 7s-3.14 7-7 7-7-3.12-7-7 3.14-7 7-7z"></path></svg></span>What&#x27;s new (last 60 days)</div><div class="admonitionContent_BuS1"><p>5 June 2026</p><ul>
+<li class=""><strong>Support for the Store instruction on IBM® QPUs</strong> - Now you can simplify complex classical computations in your quantum circuits with the Store instruction. <a href="#store-instruction" class=""><em>Read more</em></a></li>
+</ul><hr><p>29 May 2026</p><ul>
+<li class=""><strong>Qiskit Code Assistant service discontinued</strong> - The preview service has been discontinued and the Visual Studio Code and JupyterLab extensions have been archived. <a href="#qca-sunset" class=""><em>Read more</em></a></li>
+</ul><hr><p>28 May 2026</p><ul>
+<li class=""><strong>New Classroom Accounts</strong> - Professors can now request a Classroom Account to manage and facilitate access for their students. With Classroom Accounts, students can use Open Plan resources without needing to provide personal credit card information. <a href="#classroom-accounts" class=""><em>Read more</em></a></li>
+</ul><hr><p>18 May 2026</p><ul>
+<li class=""><strong>Introducing the Executor primitive</strong> - We&#x27;re excited to announce the release of the new <code>Executor</code> primitive and a new version of the noise-learning helper class, <code>NoiseLearnerV3</code>, both of which were first previewed at QDC 2025. <a href="#executor-primitive" class=""><em>Read more</em></a></li>
+</ul></div></div>
 <p>Jump to <a href="#latest-platform" class="">IBM Quantum Platform</a> | <a href="#latest-qiskit-sdk" class="">Qiskit SDK</a> | <a href="#latest-qiskit-runtime" class="">Qiskit Runtime client</a> | <a href="#latest-runtime-service" class="">Qiskit Runtime service</a> | <a href="#latest-qiskit-transpiler-service" class="">Qiskit Transpiler Service</a> | <a href="#latest-qiskit-addons" class="">Qiskit addons</a> | <a href="#latest-qiskit-functions" class="">Qiskit Functions</a> | <a href="#latest-qca" class="">Qiskit Code Assistant</a></p>
 <span id="latest-platform"></span>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="ibm-quantum-platform">IBM Quantum Platform<a href="#ibm-quantum-platform" class="hash-link" aria-label="Direkter Link zr IBM Quantum Platform" title="Direkter Link zr IBM Quantum Platform" translate="no">​</a></h2>
 <p>This section summarizes the recent enhancements and new features for the new <a href="https://quantum.cloud.ibm.com/" target="_blank" rel="noopener noreferrer" class="">IBM Quantum Platform</a>.</p>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="may-2026">May 2026<a href="#may-2026" class="hash-link" aria-label="Direkter Link zr May 2026" title="Direkter Link zr May 2026" translate="no">​</a></h3>
+<span id="store-instruction"></span>
 <ul>
 <li class="">
 <p><strong>Support for the <a href="https://docs.quantum.ibm.com/api/qiskit/circuit#store" target="_blank" rel="noopener noreferrer" class="">Store</a> instruction on IBM® QPUs</strong> - Now you can simplify complex classical computations in your quantum circuits with the Store instruction.</p>
@@ -50,9 +59,10 @@
 </li>
 </ul>
 </li>
-<li class="">
-<p><strong>New Classroom Accounts</strong>: Professors can now request a <a class="" href="/guides/classroom-accounts">Classroom Account</a> to manage and facilitate access for their students. With Classroom Accounts, students can use Open Plan resources without needing to provide personal credit card information.</p>
-</li>
+</ul>
+<span id="classroom-accounts"></span>
+<ul>
+<li class=""><strong>New Classroom Accounts</strong>: Professors can now request a <a class="" href="/guides/classroom-accounts">Classroom Account</a> to manage and facilitate access for their students. With Classroom Accounts, students can use Open Plan resources without needing to provide personal credit card information.</li>
 </ul>
 <div class="dq-accordion"><details class="dq-accordion-item" style="margin:0.5rem 0;padding:0.5rem 1rem;border:1px solid var(--ifm-color-emphasis-300);border-radius:4px"><summary style="cursor:pointer;font-weight:600"><strong>Previous updates (2026)</strong></summary><div style="margin-top:0.5rem"><h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="april-2026">April 2026<a href="#april-2026" class="hash-link" aria-label="Direkter Link zr April 2026" title="Direkter Link zr April 2026" translate="no">​</a></h3><ul>
 <li class="">
@@ -286,6 +296,7 @@
 <span id="latest-qiskit-runtime"></span>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="qiskit-runtime-client-0460">Qiskit Runtime client 0.46.0<a href="#qiskit-runtime-client-0460" class="hash-link" aria-label="Direkter Link zr Qiskit Runtime client 0.46.0" title="Direkter Link zr Qiskit Runtime client 0.46.0" translate="no">​</a></h2>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="april-2026-1">April 2026<a href="#april-2026-1" class="hash-link" aria-label="Direkter Link zr April 2026" title="Direkter Link zr April 2026" translate="no">​</a></h3>
+<span id="executor-primitive"></span>
 <ul>
 <li class="">
 <p><strong>Introducing the Executor primitive</strong>: We&#x27;re excited to announce the release of the new <code>Executor</code> primitive and a new version of the noise-learning helper class, <code>NoiseLearnerV3</code>, both of which were first previewed at QDC 2025.</p>
@@ -490,6 +501,7 @@ Improvements include the following:</p>
 </ul></div></details></div>
 <span id="latest-qca"></span>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="qiskit-code-assistant">Qiskit Code Assistant<a href="#qiskit-code-assistant" class="hash-link" aria-label="Direkter Link zr Qiskit Code Assistant" title="Direkter Link zr Qiskit Code Assistant" translate="no">​</a></h2>
+<span id="qca-sunset"></span>
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="29-may-2026">29 May 2026<a href="#29-may-2026" class="hash-link" aria-label="Direkter Link zr 29 May 2026" title="Direkter Link zr 29 May 2026" translate="no">​</a></h3>
 <ul>
 <li class="">
