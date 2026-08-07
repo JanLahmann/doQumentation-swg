@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.fa8341e3.css">
-<script src="/assets/js/runtime~main.1f4b434f.js" defer="defer"></script>
-<script src="/assets/js/main.b3c70ef3.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.02852378.js" defer="defer"></script>
+<script src="/assets/js/main.3f6763d0.js" defer="defer"></script>
 <meta data-dq-fallback-noindex name="robots" content="noindex, follow" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -168,7 +168,7 @@ We can use this cost function and an optimizer to calculate optimal parameters</
 <ul>
 <li class=""><strong>Bootstrapping</strong> can help the optimization loop avoid getting stuck in a parameter space where the gradient is small.</li>
 <li class=""><strong>Experimenting with hardware-efficient ansatz</strong>: Since we&#x27;re using a noisy quantum system as a black-box oracle, the quality of those evaluations can affect the optimizer&#x27;s performance. Using hardware-efficient ansatz, such as <a href="https://docs.quantum.ibm.com/api/qiskit/qiskit.circuit.library.EfficientSU2" target="_blank" rel="noopener noreferrer" class=""><code>EfficientSU2</code></a>, may avoid producing exponentially small gradients.</li>
-<li class=""><strong>Experimenting with error suppression and error mitigation</strong>:  the Qiskit Runtime primitives provide a simple interface to experiment with various values for <code>optimization_level</code> and <code>resilience_setting</code>, respectively. This can reduce the impact of noise and make the optimization process more efficient.</li>
+<li class=""><strong>Experimenting with error suppression and error mitigation</strong>:  the IBM Quantum primitives provide a simple interface to experiment with various values for <code>optimization_level</code> and <code>resilience_setting</code>, respectively. This can reduce the impact of noise and make the optimization process more efficient.</li>
 <li class=""><strong>Experimenting with gradient-free optimizers</strong>: Unlike gradient-based optimization algorithms, optimizers such as <code>COBYLA</code> do not rely on gradient information to optimize the parameters and are therefore less likely to be affected by the barren plateau.</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direkter Link zr Summary" title="Direkter Link zr Summary" translate="no">​</a></h2>

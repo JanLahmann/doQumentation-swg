@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.fa8341e3.css">
-<script src="/assets/js/runtime~main.1f4b434f.js" defer="defer"></script>
-<script src="/assets/js/main.b3c70ef3.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.02852378.js" defer="defer"></script>
+<script src="/assets/js/main.3f6763d0.js" defer="defer"></script>
 <meta data-dq-fallback-noindex name="robots" content="noindex, follow" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -31,7 +31,7 @@
 <ul>
 <li class="">Step 1: Map problem to quantum circuits and operators</li>
 <li class="">Step 2: Optimize for target hardware</li>
-<li class="">Step 3: Execute using Qiskit Primitives</li>
+<li class="">Step 3: Execute using IBM Quantum primitives</li>
 <li class="">Step 4: Post-process</li>
 </ul>
 <p>An important step in the sample-based quantum diagonalization method is to generate quality vectors for the subspace. In the previous lesson, we used the LUCJ ansatz to generate subspace vectors for a chemistry Hamiltonian. In this lesson, we will use quantum Krylov states<a href="#references" class="">[1]</a> as was discussed in lesson 2. First, we will review how to create the Krylov space on a quantum computer using time evolution operations. We will then sample from it. We will project the system Hamiltonian onto the sampled subspace and diagonalize it to estimate the ground state energy. The algorithm provably and efficiently converges to the ground state, under the assumptions described in lesson 2.</p>
