@@ -15,8 +15,8 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
 <script src="https://unpkg.com/thebelab@0.4.0/lib/index.js" async></script>
 <script src="https://cloud.umami.is/script.js" defer="defer" data-website-id="97f347ac-e7ba-4be3-b26f-ab4b328bdbf2" data-domains="doqumentation.org"></script><link rel="stylesheet" href="/assets/css/styles.e55021e4.css">
-<script src="/assets/js/runtime~main.b337da55.js" defer="defer"></script>
-<script src="/assets/js/main.fb69d561.js" defer="defer"></script>
+<script src="/assets/js/runtime~main.1bfda2ed.js" defer="defer"></script>
+<script src="/assets/js/main.e728e65c.js" defer="defer"></script>
 <meta data-dq-fallback-noindex name="robots" content="noindex, follow" /></head>
 <body>
 <svg style="display: none;"><defs>
@@ -34,12 +34,12 @@
 <h3 class="anchor anchorTargetStickyNavbar_Vzrq" id="references">References<a href="#references" class="hash-link" aria-label="Direkter Link zr References" title="Direkter Link zr References" translate="no">​</a></h3>
 <p>The following articles are referenced in the above video.</p>
 <ul>
-<li class=""><a href="https://arxiv.org/pdf/cond-mat/0012334.pdf" target="_blank" rel="noopener noreferrer" class="">Quantum Algorithms for Fermionic Simulations, Ortiz, et al.</a></li>
-<li class=""><a href="https://arxiv.org/pdf/1007.2648.pdf" target="_blank" rel="noopener noreferrer" class="">Simulating Chemistry using Quantum Computers, Kassal et al.</a></li>
-<li class=""><a href="https://pubs.acs.org/doi/full/10.1021/acs.jctc.8b00450" target="_blank" rel="noopener noreferrer" class="">A Comparison of the Bravyi–Kitaev and Jordan–Wigner Transformations for the Quantum Simulation of Quantum Chemistry, Tranter, et al.</a></li>
-<li class=""><a href="https://arxiv.org/pdf/1812.09976.pdf" target="_blank" rel="noopener noreferrer" class="">Quantum Chemistry in the Age of Quantum Computing, Cao, et al.</a></li>
-<li class=""><a href="https://arxiv.org/pdf/1808.10402.pdf" target="_blank" rel="noopener noreferrer" class="">Quantum computational chemistry, McArdle, et al.</a></li>
-<li class=""><a href="https://arxiv.org/pdf/1208.5986.pdf" target="_blank" rel="noopener noreferrer" class="">The Bravyi-Kitaev transformation for quantum computation of electronic structure, Seeley, et al.</a></li>
+<li class=""><a href="https://arxiv.org/pdf/cond-mat/0012334.pdf" target="_blank" rel="noopener noreferrer" class="">Quantum Algorithms for Fermionic Simulations, Ortiz, et al</a>.</li>
+<li class=""><a href="https://arxiv.org/pdf/1007.2648.pdf" target="_blank" rel="noopener noreferrer" class="">Simulating Chemistry using Quantum Computers, Kassal et al</a>.</li>
+<li class=""><a href="https://pubs.acs.org/doi/full/10.1021/acs.jctc.8b00450" target="_blank" rel="noopener noreferrer" class="">A Comparison of the Bravyi–Kitaev and Jordan–Wigner Transformations for the Quantum Simulation of Quantum Chemistry, Tranter, et al</a>.</li>
+<li class=""><a href="https://arxiv.org/pdf/1812.09976.pdf" target="_blank" rel="noopener noreferrer" class="">Quantum Chemistry in the Age of Quantum Computing, Cao, et al</a>.</li>
+<li class=""><a href="https://arxiv.org/pdf/1808.10402.pdf" target="_blank" rel="noopener noreferrer" class="">Quantum computational chemistry, McArdle, et al</a>.</li>
+<li class=""><a href="https://arxiv.org/pdf/1208.5986.pdf" target="_blank" rel="noopener noreferrer" class="">The Bravyi-Kitaev transformation for quantum computation of electronic structure, Seeley, et al</a>.</li>
 </ul>
 <h2 class="anchor anchorTargetStickyNavbar_Vzrq" id="preparing-hamiltonians-for-quantum-chemistry">Preparing Hamiltonians for Quantum Chemistry<a href="#preparing-hamiltonians-for-quantum-chemistry" class="hash-link" aria-label="Direkter Link zr Preparing Hamiltonians for Quantum Chemistry" title="Direkter Link zr Preparing Hamiltonians for Quantum Chemistry" translate="no">​</a></h2>
 <p>A good first step in applying quantum computing to a chemistry problem is defining a Hamiltonian for the system of interest. Here, we will restrict the discussion to quantum chemistry Hamiltonians, as those Hamiltonians require some mapping specific to systems of identical fermions.</p>
@@ -67,7 +67,7 @@ Goal:</p>
 <li class="">Define your molecule</li>
 </ol>
 <p>Here we will specify attributes of the molecule of interest. In this example, we&#x27;ve chosen diatomic hydrogen (because the resulting Hamiltonians are short enough to display).
-The Python-based Simulations of Chemistry Framework (<a href="https://pyscf.org/" target="_blank" rel="noopener noreferrer" class="">PySCF</a>) has a wide collection of electronic structure modules that can be used to, among other things, generate molecular Hamiltonians suitable for quantum computation. The <a href="https://pyscf.org/quickstart.html" target="_blank" rel="noopener noreferrer" class="">PySCF Quickstart</a> guide is an excellent resource for a full description of all the variables and functionality. We will give only the most cursory overview, since this will already be familiar to many of you. To understand these better, visit <a href="https://pyscf.org/" target="_blank" rel="noopener noreferrer" class="">PySCF.</a>
+The Python-based Simulations of Chemistry Framework (<a href="https://pyscf.org/" target="_blank" rel="noopener noreferrer" class="">PySCF</a>) has a wide collection of electronic structure modules that can be used to, among other things, generate molecular Hamiltonians suitable for quantum computation. The <a href="https://pyscf.org/quickstart.html" target="_blank" rel="noopener noreferrer" class="">PySCF Quickstart</a> guide is an excellent resource for a full description of all the variables and functionality. We will give only the most cursory overview, since this will already be familiar to many of you. To understand these better, visit <a href="https://pyscf.org/" target="_blank" rel="noopener noreferrer" class="">PySCF</a>.
 Briefly:</p>
 <p><strong>distance</strong> can be used for diatomic molecules, or simply specify Cartesian coordinates for each atom. Distances are in units of Angstrom.</p>
 <p><strong>gto</strong> generates gaussian-type orbitals.</p>
